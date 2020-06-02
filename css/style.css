@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-*{
-    font-family: 'Josefin Sans', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    font-weight: 400;
+* {
+	font-family: 'Josefin Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
 }
 
-body{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(31, 146, 108);
+body {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(31, 146, 108);
+	word-wrap: break-word;
 }
 
 .center {
@@ -19,80 +20,103 @@ body{
 	top: 0;
 	right: 0;
 	bottom: 0;
-    left: 0;
-    width: 40%;
-    height:/*min-content*/ 90%;
-    border-radius: 15px;
-    padding: 20px;
-    background-color: rgb(85, 235, 177);
-    /*display: flex;
+	left: 0;
+	width: 40%;
+	height:/*min-content*/ 90%;
+	border-radius: 15px;
+	padding: 20px;
+	background-color: rgb(85, 235, 177);
+	/*display: flex;
     flex-direction: column;
     align-items: center;*/
 }
 
-section{
-    margin-top:20px;
-    height:auto;
+section {
+	margin-top: 20px;
+	height: auto;
 }
 
 #weka,
 button {
 	padding: 10px;
 	outline: none;
-    border-radius: 15px;
-    border-style: none;
-    font-weight: bold;
+	border-radius: 15px;
+	border-style: none;
+	font-weight: bold;
 }
 
-#weka{
-    font-weight: 400;
-    color: grey;
+#weka {
+	font-weight: 400;
+	color: grey;
 }
 
-button{
-    background-color: cadetblue;
+button {
+	background-color: cadetblue;
 }
 
-
-
-
-h3{
-    color: rgb(73, 9, 133);
-    text-decoration:underline;
-    margin-top: 30px;
-    padding-bottom: 10px;
-    font-weight: bolder;
+h3 {
+	color: rgb(73, 9, 133);
+	text-decoration: underline;
+	margin-top: 30px;
+	padding-bottom: 10px;
+	font-weight: bolder;
 }
 
-
-
-ul{
-    text-decoration: none;
-    list-style-type:none;
+ul {
+	text-decoration: none;
+	list-style-type: none;
 }
 
-li{
-    text-align: left;
-    background-color: cadetblue;
-    width: max-content;
-    max-width: 90%;
-    height: auto;
-    padding: 1.5%;
-    border-radius: 2em;
-    margin:0px 0px 10px 0px;
-
+li {
+	text-align: left;
+	background-color: cadetblue;
+	width: max-content;
+	max-width: 90%;
+	height: auto;
+	padding: 1.5%;
+	border-radius: 2em;
+	margin: 0px 0px 10px 0px;
 }
 
-
-li .buttons{
-    display: inline;
-
+li .buttons {
+	display: inline;
 }
 
-.buttons .remove{
-    background-color: aquamarine;
+.buttons .remove {
+	background-color: aquamarine;
 }
 
-.remove,.complete{
-    padding: 0px 3px;
+.remove,
+.complete {
+	padding: 0px 3px;
+	margin: 0px 4px;
+}
+
+@media screen and (max-width: 780px) {
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		background-color: blue;
+		margin: 0px;
+		padding: 0px;
+		display: initial;
+		/*background-color: rgb(85, 235, 177);*/
+	}
+
+	.center {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		border-radius: 0px;
+		margin-bottom: 0px;
+	}
+
+	li {
+		padding: 1.5% 3%;
+	}
 }
