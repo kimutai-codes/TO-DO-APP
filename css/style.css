@@ -73,23 +73,26 @@ li {
 	width: max-content;
 	max-width: 90%;
 	height: auto;
-	padding: 1.5%;
+    padding: 1% 1.5%;
 	border-radius: 2em;
 	margin: 0px 0px 10px 0px;
 }
 
 li .buttons {
-	display: inline;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0px 2px;
 }
 
-.buttons .remove {
-	background-color: aquamarine;
-}
+/*.buttons .remove {
+    background-color: aquamarine;
+    display: inline;
+}*/
 
 .remove,
 .complete {
-	padding: 0px 3px;
-	margin: 0px 4px;
+	padding: 0px;
+    margin: 0px;
 }
 
 @media screen and (max-width: 780px) {
@@ -117,6 +120,11 @@ li .buttons {
 	}
 
 	li {
-		padding: 1.5% 3%;
+		padding: 1% 2%;
 	}
+}
+
+svg{
+    width: 10px;
+    height: auto;
 }
