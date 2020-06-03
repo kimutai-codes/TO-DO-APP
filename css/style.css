@@ -89,11 +89,24 @@ li .buttons {
     display: inline;
 }*/
 
-.remove,
-.complete {
-	padding: 0px;
-    margin: 0px;
+
+.remove{
+	padding: 0% 2% ;
+    margin: 0% 15%;
 }
+
+.complete {
+	padding: 0% 0% ;
+    margin: 0%;
+}
+
+/*.remove svg{
+	background-color: blue;
+	color:red;
+}
+*/
+
+
 
 @media screen and (max-width: 780px) {
 	* {
@@ -126,5 +139,5 @@ li .buttons {
 
 svg{
     width: 10px;
-    height: auto;
+	height: auto;
 }
